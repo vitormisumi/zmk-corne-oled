@@ -11,7 +11,7 @@
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+&msc_input_listener { input-processors = <&zip_scroll_scaler 3 1>; };
 
 &msc {
     delay-ms = <0>;                   // 0
@@ -75,6 +75,14 @@
         tap-ms = <100>;
     };
 
+    scroll_horizontal_encoder: scroll_horizontal_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+        tap-ms = <100>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -108,7 +116,7 @@
                                          &trans  &trans  &trans                                                          &trans        &trans        &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         symbol_layer {
@@ -120,7 +128,7 @@
                                                   &trans                          &trans                         &kp SPACE                                                                                   &kp SPACE             &trans            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&scroll_horizontal_encoder>;
         };
 
         extra_layer {
