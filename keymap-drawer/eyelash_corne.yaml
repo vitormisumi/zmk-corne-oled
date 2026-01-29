@@ -113,7 +113,7 @@ layers:
   - ^
   - {t: '$$mdi:transfer$$', type: trans}
   - '|'
-  - $$mdi:bluetooth-off$$
+  - '&'
   - {t: $, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '[', h: '$$mdi:apple-keyboard-control$$', s: '{'}
   - {t: ']', h: '$$mdi:apple-keyboard-shift$$', s: '}'}
