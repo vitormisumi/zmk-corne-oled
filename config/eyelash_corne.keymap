@@ -73,7 +73,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
-        tap-ms = <100>;
+        tap-ms = <50>;
     };
 
     scroll_horizontal_encoder: scroll_horizontal_encoder {
@@ -81,7 +81,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
 
-        tap-ms = <100>;
+        tap-ms = <50>;
     };
 
     volume_encoder: volume_encoder {
@@ -89,7 +89,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
 
-        tap-ms = <50>;
+        tap-ms = <100>;
     };
 
     combos {
