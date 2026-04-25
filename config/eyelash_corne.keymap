@@ -129,9 +129,9 @@
         symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp HASH       &kp EXCL       &kp QUESTION          &kp LEFT_PARENTHESIS            &kp RIGHT_PARENTHESIS          &kp SINGLE_QUOTE                                           &mmv MOVE_UP                     &kp LS(LA(NUMBER_2))  &kp LA(NUMBER_9)  &kp LA(NUMBER_0)  &kp LS(LA(NUMBER_8))  &kp CARET  &trans
-&kp PIPE       &kp AMPERSAND  &hml LEFT_ALT DOLLAR  &hml LEFT_CONTROL LEFT_BRACKET  &hml LEFT_SHIFT RIGHT_BRACKET  &hml LEFT_GUI DOUBLE_QUOTES                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp UNDERSCORE        &trans            &kp UP_ARROW      &trans                &trans     &kp LA(I)
-&kp BACKSLASH  &kp AT_SIGN    &kp PERCENT           &kp LEFT_BRACE                  &kp RIGHT_BRACE                &kp SLASH                    &kp C_MUTE                    &mmv MOVE_DOWN                   &kp GRAVE             &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW       &trans     &kp LA(SINGLE_QUOTE)
+&kp HASH       &kp EXCL       &kp QUESTION          &kp LEFT_PARENTHESIS            &kp RIGHT_PARENTHESIS          &kp SINGLE_QUOTE                                           &mmv MOVE_UP                     &kp LS(LA(NUMBER_2))  &kp LA(NUMBER_9)  &kp LA(NUMBER_0)  &kp LS(LA(NUMBER_8))  &kp CARET      &trans
+&kp PIPE       &kp AMPERSAND  &hml LEFT_ALT DOLLAR  &hml LEFT_CONTROL LEFT_BRACKET  &hml LEFT_SHIFT RIGHT_BRACKET  &hml LEFT_GUI DOUBLE_QUOTES                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp UNDERSCORE        &trans            &kp UP_ARROW      &trans                &trans         &kp LA(I)
+&kp BACKSLASH  &kp AT_SIGN    &kp PERCENT           &kp LEFT_BRACE                  &kp RIGHT_BRACE                &kp SLASH                    &kp C_MUTE                    &mmv MOVE_DOWN                   &kp GRAVE             &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp LA(GRAVE)  &kp LA(SINGLE_QUOTE)
                                                     &trans                          &trans                         &kp SPACE                                                                                   &kp SPACE             &trans            &trans
             >;
 
