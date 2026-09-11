@@ -4,6 +4,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <behaviors/runtime-sensor-rotate.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -58,6 +59,20 @@
             hold-trigger-key-positions = <5 18 33 32 17 4 3 16 31 30 15 2 1 14 29 28 13 0>;
             hold-trigger-on-release;
         };
+
+        rsr_trans: rsr_trans {
+            compatible = "zmk,behavior-runtime-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <0>;
+        };
+
+        rsr_vol: rsr_vol {
+            compatible = "zmk,behavior-runtime-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <5>;
+            cw-binding = <&kp C_VOL_UP>;
+            ccw-binding = <&kp C_VOL_DN>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -95,7 +110,7 @@
                                       &mt LGUI LG(SPACE)   &mo 1              &mt LS(LA(LC(LEFT_GUI))) SPACE                                                                                              &mt RS(RA(RC(RIGHT_GUI))) SPACE  &mo 2               &mt RIGHT_GUI ENTER
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         number_layer {
@@ -107,7 +122,7 @@
                                          &trans  &trans  &trans                                                          &trans        &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         symbol_layer {
@@ -131,7 +146,7 @@
                         &trans  &trans  &trans                                        &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
     };
 };
