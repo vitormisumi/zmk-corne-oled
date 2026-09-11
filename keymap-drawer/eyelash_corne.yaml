@@ -42,11 +42,11 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: ;, s: ':'}
-  - Alt+E
+  - {t: Alt+E, h: Fn}
   - {t: 'Gui+$$mdi:keyboard-space$$', h: LGUI}
   - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: 'Meh+$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
+  - {t: '$$mdi:keyboard-space$$', h: Sft+AltGr+Ctl+RIGHT GUI}
   - SYMBOL
   - {t: '$$mdi:keyboard-return$$', h: RIGHT GUI}
   NUMBER:
@@ -189,11 +189,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
