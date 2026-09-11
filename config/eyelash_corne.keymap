@@ -134,7 +134,7 @@
                                                     &trans                          &trans                         &kp SPACE                                                                                   &kp SPACE             &trans            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
         extra_layer {
